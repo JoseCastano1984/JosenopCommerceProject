@@ -1,0 +1,91 @@
+﻿{
+  "InstalledPluginNames": [
+    "Obsolete field, using only for compatibility"
+  ],
+  "InstalledPlugins": [
+    {
+      "SystemName": "Payments.PayPalCommerce",
+      "Version": "4.80.13"
+    },
+    {
+      "SystemName": "DiscountRequirement.MustBeAssignedToCustomerRole",
+      "Version": "4.80.3"
+    },
+    {
+      "SystemName": "CurrencyExchange.ECB",
+      "Version": "4.80.3"
+    },
+    {
+      "SystemName": "Misc.Brevo",
+      "Version": "4.80.6"
+    },
+    {
+      "SystemName": "Misc.NopMobileApp",
+      "Version": "4.80.6"
+    },
+    {
+      "SystemName": "Misc.OmnibusDirective",
+      "Version": "4.80.4"
+    },
+    {
+      "SystemName": "Misc.Omnisend",
+      "Version": "4.80.6"
+    },
+    {
+      "SystemName": "Misc.PowerBI",
+      "Version": "4.80.5"
+    },
+    {
+      "SystemName": "Misc.WebApi.Frontend",
+      "Version": "4.80.6"
+    },
+    {
+      "SystemName": "Misc.Zettle",
+      "Version": "4.80.6"
+    },
+    {
+      "SystemName": "Payments.CheckMoneyOrder",
+      "Version": "4.80.3"
+    },
+    {
+      "SystemName": "Payments.Manual",
+      "Version": "4.80.3"
+    },
+    {
+      "SystemName": "Pickup.PickupInStore",
+      "Version": "4.80.5"
+    },
+    {
+      "SystemName": "Search.Lucene",
+      "Version": "4.80.5"
+    },
+    {
+      "SystemName": "Shipping.FixedByWeightByTotal",
+      "Version": "4.80.4"
+    },
+    {
+      "SystemName": "Tax.FixedOrByCountryStateZip",
+      "Version": "4.80.3"
+    },
+    {
+      "SystemName": "Widgets.GoogleAnalytics",
+      "Version": "4.80.3"
+    }
+  ],
+  "PluginNamesToUninstall": [],
+  "PluginNamesToDelete": [
+    "ExternalAuth.Facebook",
+    "MultiFactorAuth.GoogleAuthenticator",
+    "Payments.AmazonPay",
+    "Shipping.UPS",
+    "Tax.Avalara",
+    "Widgets.FacebookPixel",
+    "Widgets.Swiper"
+  ],
+  "PluginNamesToInstall": [
+    {
+      "Item1": "Widgets.JoseCarousel",
+      "Item2": "bff6c4b2-ffd6-46ef-a263-9f990f319223"
+    }
+  ]
+}

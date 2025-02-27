@@ -1,0 +1,11 @@
+{
+  "Group": "Widgets",
+  "FriendlyName": "Jose Carousel",
+  "SystemName": "Widgets.JoseCarousel",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.80" ],
+  "Author": "Jose",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.JoseCarousel.dll",
+  "Description": "This is a plugin for my own training"
+}
