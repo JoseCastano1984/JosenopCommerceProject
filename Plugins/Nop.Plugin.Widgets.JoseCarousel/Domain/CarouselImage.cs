@@ -4,7 +4,7 @@ namespace Nop.Plugin.Widgets.JoseCarousel.Domain;
 
 public class CarouselImage : BaseEntity
 {
-    public int PageBannerId { get; set; }
+    
     public int PictureId { get; set; }
     public int MobilePictureId { get; set; }
     public int PictureWebPId { get; set; }

@@ -10,6 +10,7 @@ public class NopStartup : INopStartup
 {
     public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
     {
+        services.AddScoped<ICarouselService, CarouselService>();
         services.AddScoped<ICarouselImageService, CarouselImageService>();
     }
 

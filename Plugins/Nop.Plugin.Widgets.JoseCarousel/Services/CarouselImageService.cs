@@ -17,7 +17,7 @@ public class CarouselImageService : ICarouselImageService
     {
         return await _carouselImageRepository.GetAllPagedAsync(query =>
         {
-            query = query.Where(x => x.PageBannerId == carouselImageId);
+            query = query.Where(x => x.Id == carouselImageId);
             query = query.Where(x => !x.Deleted);
             query = query.OrderBy(x => x.DisplayOrder);
             return query;
