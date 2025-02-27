@@ -10044,11 +10044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.ExternalAuth.Facebook\\Nop.Plugin.ExternalAuth.Facebook.csproj",
+      "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.ExternalAuth.Facebook\\Nop.Plugin.ExternalAuth.Facebook.csproj",
       "projectName": "Nop.Plugin.ExternalAuth.Facebook",
-      "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.ExternalAuth.Facebook\\Nop.Plugin.ExternalAuth.Facebook.csproj",
+      "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.ExternalAuth.Facebook\\Nop.Plugin.ExternalAuth.Facebook.csproj",
       "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.ExternalAuth.Facebook\\obj\\",
+      "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.ExternalAuth.Facebook\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10066,8 +10066,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-              "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+            "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+              "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
             }
           }
         }

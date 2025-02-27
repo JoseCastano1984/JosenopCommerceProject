@@ -11628,11 +11628,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
+      "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
       "projectName": "Nop.Plugin.Tax.Avalara",
-      "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
+      "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Tax.Avalara\\Nop.Plugin.Tax.Avalara.csproj",
       "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Tax.Avalara\\obj\\",
+      "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Tax.Avalara\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11650,8 +11650,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
-              "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj"
+            "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+              "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj"
             }
           }
         }

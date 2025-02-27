@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nop.Plugin.Widgets.JoseCarousel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b3e287416dd198b031f69996f5c710954d363a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nop.Plugin.Widgets.JoseCarousel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nop.Plugin.Widgets.JoseCarousel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

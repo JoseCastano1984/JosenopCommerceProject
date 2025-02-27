@@ -13465,11 +13465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Misc.Brevo\\Nop.Plugin.Misc.Brevo.csproj",
+      "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Misc.Brevo\\Nop.Plugin.Misc.Brevo.csproj",
       "projectName": "Nop.Plugin.Misc.Brevo",
-      "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Misc.Brevo\\Nop.Plugin.Misc.Brevo.csproj",
+      "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Misc.Brevo\\Nop.Plugin.Misc.Brevo.csproj",
       "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Misc.Brevo\\obj\\",
+      "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Misc.Brevo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -13487,8 +13487,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
-              "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj"
+            "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+              "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj"
             }
           }
         }

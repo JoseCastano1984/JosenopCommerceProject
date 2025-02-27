@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj": {}
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj": {
       "version": "4.80.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "projectName": "Nop.Core",
-        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\obj\\",
+        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -126,14 +126,14 @@
         }
       }
     },
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj": {
       "version": "4.80.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "projectName": "Nop.Data",
-        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\obj\\",
+        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -151,8 +151,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj"
               }
             }
           }
@@ -232,14 +232,14 @@
         }
       }
     },
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\Nop.Services.csproj": {
       "version": "4.80.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "projectName": "Nop.Services",
-        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\obj\\",
+        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -257,11 +257,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj"
               }
             }
           }
@@ -361,14 +361,14 @@
         }
       }
     },
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj": {
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj",
+        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj",
         "projectName": "Nop.Plugin.Widgets.GoogleAnalytics",
-        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj",
+        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\Nop.Plugin.Widgets.GoogleAnalytics.csproj",
         "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\obj\\",
+        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Widgets.GoogleAnalytics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -386,8 +386,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj"
               }
             }
           }
@@ -433,14 +433,14 @@
         }
       }
     },
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
       "version": "4.80.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "projectName": "Nop.Web.Framework",
-        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\obj\\",
+        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -458,14 +458,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj"
               },
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\Nop.Services.csproj"
               }
             }
           }
@@ -529,14 +529,14 @@
         }
       }
     },
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj": {
       "version": "4.80.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
+        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj",
         "projectName": "Nop.Web",
-        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
+        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj",
         "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\obj\\",
+        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -554,17 +554,17 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Data\\Nop.Data.csproj"
               },
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Services\\Nop.Services.csproj"
               },
-              "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+              "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+                "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
               }
             }
           }

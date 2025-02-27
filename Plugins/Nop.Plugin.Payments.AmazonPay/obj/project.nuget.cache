@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OCGPhDRrUPI=",
+  "dgSpecHash": "D00+T62ESvA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Plugins\\Nop.Plugin.Payments.AmazonPay\\Nop.Plugin.Payments.AmazonPay.csproj",
+  "projectFilePath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Plugins\\Nop.Plugin.Payments.AmazonPay\\Nop.Plugin.Payments.AmazonPay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joseS\\.nuget\\packages\\advancedstringbuilder\\0.1.1\\advancedstringbuilder.0.1.1.nupkg.sha512",
     "C:\\Users\\joseS\\.nuget\\packages\\amazon.pay.api.sdk\\2.7.3\\amazon.pay.api.sdk.2.7.3.nupkg.sha512",

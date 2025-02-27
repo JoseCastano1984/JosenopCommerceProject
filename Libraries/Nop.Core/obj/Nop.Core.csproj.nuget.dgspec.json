@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {}
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+    "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj": {
       "version": "4.80.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectUniqueName": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "projectName": "Nop.Core",
-        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "packagesPath": "C:\\Users\\joseS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Libraries\\Nop.Core\\obj\\",
+        "outputPath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Libraries\\Nop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseS\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RdiQUaZNEwU=",
+  "dgSpecHash": "Cl30mG0bx8Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joseS\\source\\repos\\JosenopCommercePluginProject\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
+  "projectFilePath": "C:\\Users\\joseS\\source\\repos\\JosenopCommerceProject\\Presentation\\Nop.Web\\Nop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joseS\\.nuget\\packages\\advancedstringbuilder\\0.1.1\\advancedstringbuilder.0.1.1.nupkg.sha512",
     "C:\\Users\\joseS\\.nuget\\packages\\autofac\\8.1.0\\autofac.8.1.0.nupkg.sha512",
