@@ -1,38 +1,15 @@
 using Nop.Services.Cms;
 using Nop.Services.Plugins;
+using Nop.Services.Security;
+using Nop.Web.Framework.Events;
 using Nop.Web.Framework.Menu;
 
 namespace Nop.Plugin.Widgets.JoseCarousel;
 
-public class PluginJoseCarousel : BasePlugin, IWidgetPlugin, IAdminMenuPlugin
+public class PluginJoseCarousel : BasePlugin, IWidgetPlugin
 {
     public bool HideInWidgetList => false;
-    public string GetConfigurationPageUrl()
-    {
-        throw new NotImplementedException();
-    }
-
-    public PluginDescriptor PluginDescriptor { get; set; }
-    public Task InstallAsync()
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task UninstallAsync()
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task UpdateAsync(string currentVersion, string targetVersion)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task PreparePluginToUninstallAsync()
-    {
-        throw new NotImplementedException();
-    }
-
+    
     public async Task ManageSiteMapAsync(AdminMenuItem rootNode)
     {
         var customPluginsMenu = rootNode.ChildNodes.FirstOrDefault(node => node.SystemName.Equals("Custom Plugins"));
@@ -53,13 +30,11 @@ public class PluginJoseCarousel : BasePlugin, IWidgetPlugin, IAdminMenuPlugin
         customPluginsMenu!.ChildNodes.Add(new AdminMenuItem()
         {
             Visible = true,
-            SystemName = "Carousel Image Plugins",
-            Title = "Carousel Image",
+            SystemName = "Carousel Plugin",
+            Title = "Carousel Plugin",
             IconClass = "fa icon-plugins"
         });
     }
-    
-
     
     public Task<IList<string>> GetWidgetZonesAsync()
     {

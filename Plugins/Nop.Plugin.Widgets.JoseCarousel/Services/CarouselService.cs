@@ -12,7 +12,6 @@ public class CarouselService : ICarouselService
     {
         _carouselRepository = carouselRepository;
     }
-    
     public async Task<IPagedList<Carousel>> GetCarouselListAsync(int carouselId)
     {
         return await _carouselRepository.GetAllPagedAsync(query =>
@@ -23,19 +22,21 @@ public class CarouselService : ICarouselService
             return query;
         });
     }
-
     public async Task<Carousel> GetCarouselByIdAsync(int id)
     {
         return await _carouselRepository.GetByIdAsync(id, cache => default);
     }
-
     public async Task InsertAsync(Carousel carousel)
     {
         await _carouselRepository.InsertAsync(carousel);
     }
-
     public async Task UpdateAsync(Carousel carousel)
     {
         await _carouselRepository.UpdateAsync(carousel);
+    }
+
+    public async Task DeleteAsync(Carousel carousel)
+    {
+        await _carouselRepository.DeleteAsync(carousel);
     }
 }
