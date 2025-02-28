@@ -136,7 +136,6 @@ public class CarouselController : BaseController
         model = await _carouselFactory.PrepareCarouselModelAsync(model.Id);
         return View(model);
     }
-
     [HttpPost]
     public virtual async Task<IActionResult> Delete(int id)
     {
@@ -165,7 +164,6 @@ public class CarouselController : BaseController
         
         return true;
     }
-
     [HttpPost]
     public async Task<IActionResult> CarouselImagesList(CarouselImageSearchModel searchModel)
     {
@@ -233,8 +231,6 @@ public class CarouselController : BaseController
 
         return new NullJsonResult();
     }
-    
-    
     public async Task<IActionResult> CarouselImageInBanner(CarouselImageModel model)
     {
         if (!await _permissionService.AuthorizeAsync(StandardPermission.ContentManagement.TOPICS_VIEW))
