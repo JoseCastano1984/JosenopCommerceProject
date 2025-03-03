@@ -12,7 +12,6 @@
 
 # Build results
 
-.idea/
 .vs/
 [Dd]ebug/
 [Rr]elease/
@@ -170,7 +169,10 @@ glob:*.user
 *.patch
 *.hg
 src/Presentation/Nop.Web/.config/*
+src/Presentation/Nop.Web/App_Data/Gmail/AuthStore/*
+!src/Presentation/Nop.Web/App_Data/Gmail/AuthStore/Index.htm
 src/Presentation/Nop.Web/App_Data/browscap.xml
+src/Presentation/Nop.Web/App_Data/additional.crawlers.xml
 src/Presentation/Nop.Web/App_Data/installedPlugins.json
 src/Presentation/Nop.Web/App_Data/plugins.json
 src/Presentation/Nop.Web/App_Data/dataSettings.json
@@ -190,14 +192,12 @@ src/Presentation/Nop.Web/wwwroot/bundles/*
 !src/Presentation/Nop.Web/wwwroot/bundles/Index.htm
 src/Presentation/Nop.Web/wwwroot/db_backups/*.bak
 !src/Presentation/Nop.Web/wwwroot/db_backups/Index.htm
-src/Presentation/Nop.Web/wwwroot/images/*
 src/Presentation/Nop.Web/wwwroot/images/thumbs/*
 !src/Presentation/Nop.Web/wwwroot/images/thumbs/placeholder.txt
 src/Presentation/Nop.Web/wwwroot/images/uploaded/*
 !src/Presentation/Nop.Web/wwwroot/images/uploaded/placeholder.txt
 src/Presentation/Nop.Web/wwwroot/files/exportimport/*
 !src/Presentation/Nop.Web/wwwroot/files/exportimport/Index.htm
-src/Presentation/Nop.Web/wwwroot/lib_npm/*
 src/Presentation/Nop.Web/wwwroot/lib_npm/cldr-data/main/*
 !src/Presentation/Nop.Web/wwwroot/lib_npm/cldr-data/main/en/
 !src/Presentation/Nop.Web/wwwroot/lib_npm/cldr-data/main/main.zip
@@ -205,27 +205,3 @@ src/Presentation/Nop.Web/wwwroot/sitemaps/*
 !src/Presentation/Nop.Web/wwwroot/sitemaps/Index.htm
 src/packages/*
 src/Tests/Nop.Tests/Connections.resx
-src/Presentation/Nop.Web/Themes/sasTheme/Content/css/*
-
-
-
-#######################################
-
-# Default ignored files
-/shelf/
-/workspace.xml
-# Rider ignored files
-/projectSettingsUpdater.xml
-/contentModel.xml
-/modules.xml
-/.idea.NopCommerce.iml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-# GitHub Copilot persisted chat sessions
-/copilot/chatSessions
-
-
-src/Webjobs/DataFeedWebJobs/appsettings.json
