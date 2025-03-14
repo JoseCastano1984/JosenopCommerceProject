@@ -6,6 +6,6 @@
   "SupportedVersions": [ "4.80" ],
   "Author": "Jose",
   "DisplayOrder": 1,
-  "FileName": "Nop.Plugin.Widgets.CustomCarousel.dll",
+  "FileName": "Jose.Plugin.Widgets.CustomCarousel.dll",
   "Description": "This plugin is for my own training on nopcommerce plugin system. Jose"
 }

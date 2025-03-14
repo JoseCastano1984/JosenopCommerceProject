@@ -17,6 +17,14 @@
       <Content Include="plugin.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <None Remove="Views\Configure.cshtml" />
+      <Content Include="Views\Configure.cshtml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Views\_ViewImports.cshtml" />
+      <Content Include="Views\_ViewImports.cshtml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
     <!-- This target executes after "Build" target -->
     <Target Name="NopTarget" AfterTargets="Build">
