@@ -38,8 +38,8 @@ public class CustomCarouselController : BasePluginController
     [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
     public async Task<IActionResult> Configure()
     {
-        var model = await _carouselModelFactory.PrepareCarouselSearchModelAsync(new CarouselSearchModel());
-        return View("~/Plugins/Widgets.CustomCarousel/Views/Configure.cshtml");
+        var model = await _carouselModelFactory.PrepareCarouselSearchModelAsync(new  CarouselSearchModel());
+        return View("~/Plugins/Widgets.CustomCarousel/Views/Configure.cshtml",  model);
     }
     
     [HttpPost]

@@ -29,7 +29,8 @@ public class CustomCarouselPlugin : BasePlugin, IWidgetPlugin
 
     public override string GetConfigurationPageUrl()
     {
-        return _webHelper.GetStoreLocation() + "Admin/CustomCarousel/Configure";
+        return $"{_webHelper.GetStoreLocation()}Admin/CustomCarousel/Configure";
+        
     }
     
     public override async Task InstallAsync()
