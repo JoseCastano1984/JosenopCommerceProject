@@ -1,6 +1,8 @@
+using Jose.Plugin.Widgets.CustomCarousel.Components;
 using Nop.Core;
 using Nop.Services.Cms;
 using Nop.Services.Plugins;
+using Nop.Web.Framework.Infrastructure;
 
 namespace Jose.Plugin.Widgets.CustomCarousel;
 
@@ -48,12 +50,12 @@ public class CustomCarouselPlugin : BasePlugin, IWidgetPlugin
 
     public Task<IList<string>> GetWidgetZonesAsync()
     {
-        throw new NotImplementedException();
+        return Task.FromResult<IList<string>>(new List<string> { PublicWidgetZones.HomepageTop });
     }
 
     public Type GetWidgetViewComponent(string widgetZone)
     {
-        throw new NotImplementedException();
+        return typeof(CustomCarouselViewComponent);
     }
     #endregion
 }

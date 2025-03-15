@@ -8,6 +8,7 @@ using Nop.Services.Security;
 using Nop.Web.Framework;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Models.Extensions;
+using Nop.Web.Framework.Mvc;
 using Nop.Web.Framework.Mvc.Filters;
 
 namespace Jose.Plugin.Widgets.CustomCarousel.Controllers;
@@ -44,11 +45,24 @@ public class CustomCarouselController : BasePluginController
     
     [HttpPost]
     [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
-    public async Task<IActionResult> CarouselList(CarouselSearchModel searchModel)
+    public async Task<IActionResult> List(CarouselSearchModel searchModel)
     {
         var model = await _carouselModelFactory.PrepareCarouselListModelAsync(searchModel);
 
         return Json(model);
+    }
+    
+    [HttpPost]
+    [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var carousel = await _carouselService.GetCarouselByIdAsync(id);
+        if (carousel == null)
+            return RedirectToAction("Configure");
+
+        await _carouselService.DeleteCarouselAsync(carousel);
+
+        return new NullJsonResult();
     }
 
 }

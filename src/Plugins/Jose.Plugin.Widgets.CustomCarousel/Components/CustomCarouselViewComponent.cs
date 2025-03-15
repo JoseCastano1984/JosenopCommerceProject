@@ -1,3 +1,4 @@
+using Jose.Plugin.Widgets.CustomCarousel.Models;
 using Microsoft.AspNetCore.Mvc;
 using Nop.Web.Framework.Components;
 
@@ -7,6 +8,7 @@ public class CustomCarouselViewComponent : NopViewComponent
 {
     public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
     {
-        return null;
+        var model = new CarouselImageModel();
+        return View("~/Plugins/Widgets.CustomCarousel/Views/CarouselImageSlider.cshtml", model);
     }
 }
