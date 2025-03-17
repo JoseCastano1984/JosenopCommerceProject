@@ -30,6 +30,9 @@
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Data\" />
+    </ItemGroup>
     <!-- This target executes after "Build" target -->
     <Target Name="NopTarget" AfterTargets="Build">
         <!-- Delete unnecessary libraries from plugins path -->

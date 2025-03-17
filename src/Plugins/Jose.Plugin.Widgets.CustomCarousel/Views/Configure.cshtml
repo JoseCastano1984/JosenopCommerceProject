@@ -1,3 +1,4 @@
+@inject Nop.Core.Domain.Common.AdminAreaSettings adminAreaSettings
 @using Nop.Web.Framework.Models.DataTables
 @using Jose.Plugin.Widgets.CustomCarousel.Models
 @model CarouselSearchModel
@@ -21,24 +22,24 @@
                     {
                         new ColumnProperty(nameof(CarouselModel.CarouselName))
                         {
-                            Title = T("Plugins.Widgets.CustomCarousel.Fields.CarouselName").Text,
+                            Title = "Carousel name",
                             Width = "200"
                         },
                         new ColumnProperty(nameof(CarouselModel.StartDate))
                         {
-                            Title = T("Plugins.Widgets.CustomCarousel.Fields.StartDate").Text,
+                            Title = "Start date",
                             Width = "200",
                             Render = new RenderDate()
                         },
                         new ColumnProperty(nameof(CarouselModel.EndDate))
                         {
-                            Title = T("Plugins.Widgets.CustomCarousel.Fields.EndDate").Text,
+                            Title = "End date",
                             Width = "100",
                             Render = new RenderDate()
                         },
                         new ColumnProperty(nameof(CarouselModel.Published))
                         {
-                            Title = T("Plugins.Widgets.CustomCarousel.Fields.Published").Text,
+                            Title = "Published",
                             Width = "100",
                             ClassName = NopColumnClassDefaults.CenterAll,
                             Render = new RenderBoolean()
@@ -68,7 +69,7 @@
             </script>
 
             <div class="card-footer">
-                <button type="submit" id="btnAddNewOption" name="save" class="btn btn-primary" onclick="javascript:OpenWindow('@(Url.Action("Create", "CustomCarousel",  new { btnId = "btnRefresh", formId = "custom-carousel-form" }))', 800, 800, true); return false;">@T("Plugins.Widgets.CustomCarousel.AddNew")</button>
+                <button type="submit" id="btnAddNewOption" name="save" class="btn btn-primary" onclick="javascript:OpenWindow('@(Url.Action("Create", "CustomCarousel",  new { btnId = "btnRefresh", formId = "custom-carousel-form" }))', 800, 800, true); return false;">Add new carousel</button>
 
                 <button id="btnRefresh" type="submit" name="save" class="btn btn-default" style="display: none"></button>
             </div>

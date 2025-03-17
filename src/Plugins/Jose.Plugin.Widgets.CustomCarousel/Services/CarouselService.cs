@@ -8,7 +8,7 @@ public class CarouselService : ICarouselService
 {
     #region Fields
     
-    protected readonly IRepository<Carousel> _carouselRepository;
+    private readonly IRepository<Carousel> _carouselRepository;
     
     #endregion
     
