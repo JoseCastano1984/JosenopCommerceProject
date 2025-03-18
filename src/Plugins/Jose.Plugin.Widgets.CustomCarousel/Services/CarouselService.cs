@@ -23,13 +23,11 @@ public class CarouselService : ICarouselService
     
     #region Methods
     
-    public async Task<IPagedList<Carousel>> GetAllCarouselsAsync(int carouselId = 0, int pageIndex = 0, int pageSize = int.MaxValue)
+    public async Task<IPagedList<Carousel>> GetAllCarouselsAsync(int pageIndex = 0, int pageSize = int.MaxValue)
     {
         var carousels = await _carouselRepository.GetAllAsync(query =>
         {
-            if  (carouselId > 0)
-                query = query.Where(c => c.Id == carouselId || c.Id == 0);
-            query = query.OrderBy(c => c.Id).ThenBy(c => c.CarouselName);
+            query = query.OrderBy(c => c.CarouselName);
 
             return query;
         });

@@ -1,3 +1,4 @@
+using Jose.Plugin.Widgets.CustomCarousel.Domain;
 using Nop.Web.Framework.Models;
 using Nop.Web.Framework.Mvc.ModelBinding;
 
@@ -5,12 +6,14 @@ namespace Jose.Plugin.Widgets.CustomCarousel.Models;
 
 public record CarouselModel : BaseNopEntityModel
 {
-    [NopResourceDisplayName("Plugins.Widgets.CustomCarousel.Fields.CarouselName")]
+    [NopResourceDisplayName("Carousel Name")]
     public string CarouselName { get; set; }
-    [NopResourceDisplayName("Plugins.Widgets.CustomCarousel.Fields.StartDate")]
+    [NopResourceDisplayName("Start Date")]
     public DateTime StartDate { get; set; }
-    [NopResourceDisplayName("Plugins.Widgets.CustomCarousel.Fields.EndDate")]
+    [NopResourceDisplayName("End Date")]
     public DateTime EndDate { get; set; }
-    [NopResourceDisplayName("Plugins.Widgets.CustomCarousel.Fields.Published")]
+    [NopResourceDisplayName("Published")]
     public bool Published { get; set; }
+    
+    public List<CarouselImage> Images { get; set; }
 }

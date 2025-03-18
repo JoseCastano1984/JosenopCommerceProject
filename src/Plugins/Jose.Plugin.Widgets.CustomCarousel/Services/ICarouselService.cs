@@ -6,7 +6,7 @@ namespace Jose.Plugin.Widgets.CustomCarousel.Services;
 
 public interface ICarouselService
 {
-    Task<IPagedList<Carousel>> GetAllCarouselsAsync(int carouselId = 0, int pageIndex = 0, int pageSize = int.MaxValue);
+    Task<IPagedList<Carousel>> GetAllCarouselsAsync(int pageIndex = 0, int pageSize = int.MaxValue);
     
     Task<Carousel> GetCarouselByIdAsync(int carouselId);
     
