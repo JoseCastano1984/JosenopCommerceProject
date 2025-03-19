@@ -65,4 +65,32 @@ public class CustomCarouselController : BasePluginController
         return new NullJsonResult();
     }
 
+    [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
+    public async Task<IActionResult> Create()
+    {
+        var model = new CarouselModel
+        {
+            CarouselImagesInCarousel = new CarouselImage()
+        };
+        return View("~/Plugins/Widgets.CustomCarousel/Views/Create.cshtml", model);
+    }
+
+    [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
+    [HttpPost]
+    public async Task<IActionResult> Create(CarouselModel carouselModel)
+    {
+        var carousel = new Carousel
+        {
+            CarouselName = carouselModel.CarouselName,
+            StartDate = carouselModel.StartDate,
+            EndDate = carouselModel.EndDate,
+            Published = carouselModel.Published,
+            CarouselImagesInCarousel = carouselModel.CarouselImagesInCarousel
+
+        };
+        
+        await _carouselService.InsertCarouselAsync(carousel);
+        
+        return View("~/Plugins/Widgets.CustomCarousel/Views/Create.cshtml", carouselModel);
+    }
 }

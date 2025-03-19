@@ -9,6 +9,6 @@ public class Carousel : BaseEntity
     public DateTime EndDate { get; set; }
     public bool Published { get; set; }
     
-    public List<CarouselImage> CarouselImagesInCarousel { get; set; }
+    public CarouselImage CarouselImagesInCarousel { get; set; }
     
 }

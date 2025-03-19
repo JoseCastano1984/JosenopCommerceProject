@@ -1,0 +1,23 @@
+@model CarouselModel
+
+@{
+    if (Model.Id > 0)
+    {
+        <div class="card card-default">
+            <div class="card-header">
+                Add Carousel Images
+            </div>
+            <div class="card-body add-carousel-image">
+                <script>
+                    $(document).ready(function () {
+                        $('#addCarouselImage').on('click', function () {
+                            var carouselId = $('#@Html.IdFor(model => model.CarouselImagesInCarousel.Carousel)').val();
+                            var pictureId = $('#@Html.IdFor(model => model.CarouselImagesInCarousel.PictureId)').val();
+                            
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+    }
+}

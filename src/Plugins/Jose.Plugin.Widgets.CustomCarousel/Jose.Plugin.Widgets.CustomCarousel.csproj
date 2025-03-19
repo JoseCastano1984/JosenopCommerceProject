@@ -29,6 +29,18 @@
       <Content Include="Views\CarouselImageSlider.cshtml">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <None Remove="Views\Create.cshtml" />
+      <Content Include="Views\Create.cshtml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Views\_CreateOrUpdate.cshtml" />
+      <Content Include="Views\_CreateOrUpdate.cshtml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Views\_CreateOrUpdate.CarouselImages.cshtml" />
+      <Content Include="Views\_CreateOrUpdate.CarouselImages.cshtml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Data\" />
