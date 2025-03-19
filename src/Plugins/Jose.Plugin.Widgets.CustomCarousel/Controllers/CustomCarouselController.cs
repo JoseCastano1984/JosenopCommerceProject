@@ -68,10 +68,8 @@ public class CustomCarouselController : BasePluginController
     [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
     public async Task<IActionResult> Create()
     {
-        var model = new CarouselModel
-        {
-            CarouselImagesInCarousel = new CarouselImage()
-        };
+        var model = new CarouselModel();
+        
         return View("~/Plugins/Widgets.CustomCarousel/Views/Create.cshtml", model);
     }
 
@@ -85,8 +83,6 @@ public class CustomCarouselController : BasePluginController
             StartDate = carouselModel.StartDate,
             EndDate = carouselModel.EndDate,
             Published = carouselModel.Published,
-            CarouselImagesInCarousel = carouselModel.CarouselImagesInCarousel
-
         };
         
         await _carouselService.InsertCarouselAsync(carousel);

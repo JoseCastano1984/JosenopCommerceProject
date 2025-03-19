@@ -16,6 +16,5 @@ public record CarouselModel : BaseNopEntityModel
     public DateTime EndDate { get; set; }
     [NopResourceDisplayName("Published")]
     public bool Published { get; set; }
-    
-    public CarouselImage CarouselImagesInCarousel { get; set; }
+    public IList<CarouselImage> ImagesInCarousel { get; set; }
 }

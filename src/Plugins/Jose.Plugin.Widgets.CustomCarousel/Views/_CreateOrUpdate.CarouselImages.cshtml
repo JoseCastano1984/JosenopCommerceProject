@@ -1,4 +1,4 @@
-@model CarouselModel
+@model CarouselImageModel
 
 @{
     if (Model.Id > 0)
@@ -11,9 +11,36 @@
                 <script>
                     $(document).ready(function () {
                         $('#addCarouselImage').on('click', function () {
-                            var carouselId = $('#@Html.IdFor(model => model.CarouselImagesInCarousel.Carousel)').val();
-                            var pictureId = $('#@Html.IdFor(model => model.CarouselImagesInCarousel.PictureId)').val();
+                            var carouselId = $('#@Html.IdFor(model => model.CarouselId)').val();
+                            var pictureId = $('#@Html.IdFor(model => model.PictureId)').val();
+                            var mobilePictureId = $('#@Html.IdFor(model => model.MobilePictureId)').val();
+                            var link = $('#@Html.IdFor(model => model.Link)').val();
+                            var displayOrder = $('#@Html.IdFor(model => model.DisplayOrder)').val();
+                            var published = $('#@Html.IdFor(model => model.Published)').is(':checked');
+
+                            $('#addCarouselImage').attr('disabled', true);
                             
+                            var postData = {
+                                carouselId: carouselId,
+                                pictureId: pictureId,
+                                mobilePictureId: mobilePictureId,
+                                link: link, 
+                                displayOrder: displayOrder,
+                                published: published
+                            };
+                            addAntiForgeryToken(postData);
+                            
+                            $.ajax({
+                                cache: false,
+                                type: "POST",
+                                url: "@(Url.Action("AddImageToCarousel", "CustomCarousel"))",
+                                data: postData,
+                                success: function (data) {
+                                    if (!data.result) {
+                                        return;
+                                    }
+                                }
+                            })
                         })
                     })
                 </script>
