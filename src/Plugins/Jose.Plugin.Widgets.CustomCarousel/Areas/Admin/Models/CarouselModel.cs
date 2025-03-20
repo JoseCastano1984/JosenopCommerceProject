@@ -3,7 +3,7 @@ using Jose.Plugin.Widgets.CustomCarousel.Domain;
 using Nop.Web.Framework.Models;
 using Nop.Web.Framework.Mvc.ModelBinding;
 
-namespace Jose.Plugin.Widgets.CustomCarousel.Models;
+namespace Jose.Plugin.Widgets.CustomCarousel.Areas.Admin.Models;
 
 public record CarouselModel : BaseNopEntityModel
 {

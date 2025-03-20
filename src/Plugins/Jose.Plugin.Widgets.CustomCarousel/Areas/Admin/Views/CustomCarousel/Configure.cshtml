@@ -1,6 +1,6 @@
 @inject Nop.Core.Domain.Common.AdminAreaSettings adminAreaSettings
+@using Jose.Plugin.Widgets.CustomCarousel.Areas.Admin.Models
 @using Nop.Web.Framework.Models.DataTables
-@using Jose.Plugin.Widgets.CustomCarousel.Models
 @model CarouselSearchModel
 
 @{
@@ -69,7 +69,11 @@
             </script>
 
             <div class="card-footer">
-                <button type="submit" id="btnAddNewOption" name="save" class="btn btn-primary" onclick="javascript:OpenWindow('@(Url.Action("Create", "CustomCarousel",  new { btnId = "btnRefresh", formId = "custom-carousel-form" }))', 800, 800, true); return false;">Add new carousel</button>
+                <a asp-action="Create" asp-controller="CustomCarousel" class="btn bg-blue">
+                    <i class="fa fa-plus-square"></i>
+                    Add new carousel
+                </a>
+                @* <button type="submit" id="btnAddNewOption" name="save" class="btn btn-primary" onclick="javascript:OpenWindow('@(Url.Action("Create", "CustomCarousel", new { btnId = "btnRefresh", formId = "custom-carousel-form" }))', 800, 800, true); return false;">Add new carousel</button> *@
 
                 <button id="btnRefresh" type="submit" name="save" class="btn btn-default" style="display: none"></button>
             </div>

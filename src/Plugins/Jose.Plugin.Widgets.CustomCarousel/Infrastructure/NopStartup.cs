@@ -1,4 +1,4 @@
-using Jose.Plugin.Widgets.CustomCarousel.Factories;
+using Jose.Plugin.Widgets.CustomCarousel.Areas.Admin.Factories;
 using Jose.Plugin.Widgets.CustomCarousel.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;

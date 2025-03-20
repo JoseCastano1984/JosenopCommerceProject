@@ -1,17 +1,15 @@
-using DocumentFormat.OpenXml.Office2010.Excel;
+using Jose.Plugin.Widgets.CustomCarousel.Areas.Admin.Factories;
+using Jose.Plugin.Widgets.CustomCarousel.Areas.Admin.Models;
 using Jose.Plugin.Widgets.CustomCarousel.Domain;
-using Jose.Plugin.Widgets.CustomCarousel.Factories;
-using Jose.Plugin.Widgets.CustomCarousel.Models;
 using Jose.Plugin.Widgets.CustomCarousel.Services;
 using Microsoft.AspNetCore.Mvc;
 using Nop.Services.Security;
 using Nop.Web.Framework;
 using Nop.Web.Framework.Controllers;
-using Nop.Web.Framework.Models.Extensions;
 using Nop.Web.Framework.Mvc;
 using Nop.Web.Framework.Mvc.Filters;
 
-namespace Jose.Plugin.Widgets.CustomCarousel.Controllers;
+namespace Jose.Plugin.Widgets.CustomCarousel.Areas.Admin.Controllers;
 
 [AuthorizeAdmin]
 [Area(AreaNames.ADMIN)]
@@ -21,8 +19,8 @@ public class CustomCarouselController : BasePluginController
 {
     #region Fields
     
-    protected readonly ICarouselModelFactory  _carouselModelFactory;
-    protected readonly ICarouselService  _carouselService;
+    private readonly ICarouselModelFactory  _carouselModelFactory;
+    private readonly ICarouselService  _carouselService;
     
     #endregion
     
@@ -66,27 +64,40 @@ public class CustomCarouselController : BasePluginController
     }
 
     [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
-    public async Task<IActionResult> Create()
+    public virtual async Task<IActionResult> Create()
     {
-        var model = new CarouselModel();
+        var model = await _carouselModelFactory.PrepareCarouselModelCreateAsync();
         
-        return View("~/Plugins/Widgets.CustomCarousel/Views/Create.cshtml", model);
+        return View(model);
     }
 
     [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
-    [HttpPost]
-    public async Task<IActionResult> Create(CarouselModel carouselModel)
+    [HttpPost, ParameterBasedOnFormName("save-continue", "continueEditing")]
+    public virtual async Task<IActionResult> Create(CarouselModel model, bool continueEditing)
     {
-        var carousel = new Carousel
+        if (ModelState.IsValid)
         {
-            CarouselName = carouselModel.CarouselName,
-            StartDate = carouselModel.StartDate,
-            EndDate = carouselModel.EndDate,
-            Published = carouselModel.Published,
-        };
+            var carousel = new Carousel
+            {
+                CarouselName = model.CarouselName,
+                StartDate = model.StartDate,
+                EndDate = model.EndDate,
+                Published = model.Published,
+            };
+            await _carouselService.InsertCarouselAsync(carousel);
+            
+            if(!continueEditing)
+                return RedirectToAction("Configure");
+            
+            return RedirectToAction("Edit", new { id = model.Id });
+        }
         
-        await _carouselService.InsertCarouselAsync(carousel);
-        
-        return View("~/Plugins/Widgets.CustomCarousel/Views/Create.cshtml", carouselModel);
+        return View(model);
+    }
+
+    public virtual async Task<IActionResult> Edit(int id)
+    {
+        var model = await _carouselModelFactory.PrepareCarouselModelAsync(id);
+        return View("Edit", model);
     }
 }

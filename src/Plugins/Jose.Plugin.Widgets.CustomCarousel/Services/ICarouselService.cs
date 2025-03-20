@@ -1,5 +1,4 @@
 using Jose.Plugin.Widgets.CustomCarousel.Domain;
-using Jose.Plugin.Widgets.CustomCarousel.Models;
 using Nop.Core;
 
 namespace Jose.Plugin.Widgets.CustomCarousel.Services;

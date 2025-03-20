@@ -1,4 +1,4 @@
-using Jose.Plugin.Widgets.CustomCarousel.Models;
+using Jose.Plugin.Widgets.CustomCarousel.Areas.Admin.Models;
 using Microsoft.AspNetCore.Mvc;
 using Nop.Web.Framework.Components;
 
