@@ -27,12 +27,21 @@
       <None Remove="Views\_CreateOrUpdate.cshtml" />
       <None Remove="Views\_CreateOrUpdate.CarouselImages.cshtml" />
       <None Remove="Areas\Admin\Views\_ViewStart.cshtml" />
-      <Content Include="Areas\Admin\Views\_ViewStart.cshtml">
+      <Content Include="Areas\Admin\Views\_ViewImports.cshtml">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Content Update="Areas\Admin\Views\_ViewImports.cshtml">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Content Include="Areas\Admin\Views\CustomCarousel\Configure.cshtml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <Content Include="Areas\Admin\Views\CustomCarousel\Create.cshtml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+        <Content Include="Areas\Admin\Views\CustomCarousel\_CreateOrUpdate.cshtml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Areas\Admin\Views\CustomCarousel\_CreateOrUpdate.CarouselImages.cshtml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Data\" />

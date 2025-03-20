@@ -38,7 +38,7 @@ public class CustomCarouselController : BasePluginController
     public async Task<IActionResult> Configure()
     {
         var model = await _carouselModelFactory.PrepareCarouselSearchModelAsync(new  CarouselSearchModel());
-        return View("~/Plugins/Widgets.CustomCarousel/Views/Configure.cshtml",  model);
+        return View(model);
     }
     
     [HttpPost]
