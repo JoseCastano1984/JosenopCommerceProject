@@ -1,0 +1,11 @@
+{
+  "Group": "Widgets",
+  "FriendlyName": "Custom Carousel widget",
+  "SystemName": "Widgets.CustomCarousel",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.80" ],
+  "Author": "Jose",
+  "DisplayOrder": 1,
+  "FileName": "Jose.Plugin.Widgets.CustomCarousel.dll",
+  "Description": "This plugin is for my training"
+}
