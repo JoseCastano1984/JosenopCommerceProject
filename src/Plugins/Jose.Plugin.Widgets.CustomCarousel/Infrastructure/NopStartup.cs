@@ -17,7 +17,7 @@ public class NopStartup : INopStartup
 
     public void Configure(IApplicationBuilder application)
     {
-        throw new NotImplementedException();
+        
     }
 
     public int Order => 3000;
