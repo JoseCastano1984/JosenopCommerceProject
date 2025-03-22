@@ -1,0 +1,27 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Nop.Web.Framework.Infrastructure
+@model CarouselModel
+
+<form asp-controller="CustomCarousel" asp-action="Create" method="post">
+    <div class="content-header clearfix">
+        <h1 class="float-left">
+            Add a new carousel
+            <small>
+                <i class="fas fa-arrow-circle-left"></i>
+                <a asp-action="Configure">Back to carousel list</a>
+            </small>
+        </h1>
+        <div class="float-right">
+            <button type="submit" name="save" class="btn btn-primary">
+                <i class="far fa-floppy-disk"></i>
+                @T("Admin.Common.Save")
+            </button>
+            <button type="submit" name="save-continue" class="btn btn-primary">
+                <i class="far fa-floppy-disk"></i>
+                @T("Admin.Common.SaveContinue")
+            </button>
+            @await Component.InvokeAsync(typeof(AdminWidgetViewComponent), new { widgetZone = AdminWidgetZones.PollDetailsButtons, additionalData = Model })
+        </div>
+    </div>
+    @* @await Html.PartialAsync("_CreateOrUpdate", Model) *@
+</form>

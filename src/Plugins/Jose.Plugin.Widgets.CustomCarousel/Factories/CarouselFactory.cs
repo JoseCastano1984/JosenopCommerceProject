@@ -1,5 +1,7 @@
+using Jose.Plugin.Widgets.CustomCarousel.Domain;
 using Jose.Plugin.Widgets.CustomCarousel.Models;
 using Jose.Plugin.Widgets.CustomCarousel.Services;
+using Nop.Web.Areas.Admin.Infrastructure.Mapper.Extensions;
 using Nop.Web.Framework.Models.Extensions;
 
 namespace Jose.Plugin.Widgets.CustomCarousel.Factories;
@@ -43,5 +45,34 @@ public class CarouselFactory : ICarouselFactory
         searchModel.SetGridPageSize();
 
         return Task.FromResult(searchModel);
+    }
+    public async Task<CarouselModel> PrepareCarouselModelAsync(CarouselModel model, Carousel carousel)
+    {
+        if (carousel != null)
+        {
+            if (model == null)
+            {
+                model = carousel.ToModel<CarouselModel>();
+                
+            }
+        }
+        
+        //set default values for the new model
+        if (carousel == null)
+        {
+            model.Published = true;
+        }
+
+        return model;
+
+    }
+
+    public async Task<CarouselModel> PrepareCarouselModelCreateAsync()
+    {
+        CarouselModel model = new CarouselModel();
+        model.StartDate = DateTime.Now;
+        model.EndDate = DateTime.Now;
+        
+        return model;
     }
 }

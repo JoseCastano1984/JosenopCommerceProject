@@ -44,6 +44,15 @@ public class CustomCarouselController : BasePluginController
 
         return Json(model);
     }
+
+    [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
+    public virtual async Task<IActionResult> Create()
+    {
+        var model = await  _carouselFactory.PrepareCarouselModelCreateAsync();
+        model.Published = true;
+
+        return View("~/Plugins/Widgets.CustomCarousel/Views/Create.cshtml", model);
+    }
     
     [CheckPermission(StandardPermission.Configuration.MANAGE_WIDGETS)]
     public async Task<IActionResult> Edit(int carouselId)

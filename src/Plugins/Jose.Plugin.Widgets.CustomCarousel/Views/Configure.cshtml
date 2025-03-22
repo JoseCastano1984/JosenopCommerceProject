@@ -65,7 +65,11 @@
             </script>
 
             <div class="card-footer">
-                <button type="submit" id="btnAddNewOption" name="save" class="btn btn-primary" onclick="javascript:OpenWindow('@(Url.Action("Create", "PickupInStore",  new { btnId = "btnRefresh", formId = "pickup-instore-form" }))', 800, 800, true); return false;">@T("Plugins.Pickup.PickupInStore.AddNew")</button>
+                <a asp-action="Create" class="btn btn-primary">
+                    <i class="fas fa-square-plus"></i>
+                    @T("Admin.Common.AddNew")
+                </a>
+                @* <button type="submit" id="btnAddNewOption" name="save" class="btn btn-primary" onclick="javascript:OpenWindow('@(Url.Action("Create", "PickupInStore", new { btnId = "btnRefresh", formId = "pickup-instore-form" }))', 800, 800, true); return false;">@T("Plugins.Pickup.PickupInStore.AddNew")</button> *@
 
                 <button id="btnRefresh" type="submit" name="save" class="btn btn-default" style="display: none"></button>
             </div>
