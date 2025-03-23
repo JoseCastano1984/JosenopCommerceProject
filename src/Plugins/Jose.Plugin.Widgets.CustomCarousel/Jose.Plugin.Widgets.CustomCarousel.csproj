@@ -39,6 +39,14 @@
       <Content Include="Views\Create.cshtml">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <None Remove="Views\_CreateOrUpdate.cshtml" />
+      <Content Include="Views\_CreateOrUpdate.cshtml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Views\Edit.cshtml" />
+      <Content Include="Views\Edit.cshtml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
     <Target Name="NopTarget" AfterTargets="Build">

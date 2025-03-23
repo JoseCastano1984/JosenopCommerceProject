@@ -1,6 +1,15 @@
 @using Microsoft.AspNetCore.Mvc.TagHelpers
 @using Nop.Web.Framework.Infrastructure
+@using Nop.Web.Framework.UI
 @model CarouselModel
+
+@{
+    //page title
+    ViewBag.PageTitle = "Add New Carousel";
+    //active menu item (system name)
+    Layout = "_AdminLayout";
+
+}
 
 <form asp-controller="CustomCarousel" asp-action="Create" method="post">
     <div class="content-header clearfix">
@@ -23,5 +32,5 @@
             @await Component.InvokeAsync(typeof(AdminWidgetViewComponent), new { widgetZone = AdminWidgetZones.PollDetailsButtons, additionalData = Model })
         </div>
     </div>
-    @* @await Html.PartialAsync("_CreateOrUpdate", Model) *@
+    @await Html.PartialAsync("_CreateOrUpdate.cshtml", Model)
 </form>

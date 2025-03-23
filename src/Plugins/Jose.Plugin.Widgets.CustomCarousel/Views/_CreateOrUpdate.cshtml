@@ -1,0 +1,61 @@
+@model CarouselModel
+
+<div asp-validation-summary="All"></div>
+<input asp-for="Id" type="hidden" />
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="form-horizontal">
+            <div id="banner-panels" class="cards-group">
+                <div class="card card-default">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="CarouselName"/>
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="CarouselName" asp-required="true"/>
+                                <span asp-validation-for="CarouselName"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="StartDate"/>
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="StartDate" asp-required="true"/>
+                                <span asp-validation-for="StartDate"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="EndDate"/>
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="EndDate" asp-required="false"/>
+                                <span asp-validation-for="EndDate"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="Published"/>
+                            </div>
+                            <div class="col-md-9">
+                                <nop-select asp-for="Published"/>
+                                <span asp-validation-for="Published"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="banner-carousel-image">
+                    @* <nop-panel asp-name="banner-fabrics" asp-icon="fa fa-picture-o" asp-title="Fabrics" asp-hide-block-attribute-name="BannerFabrics" asp-hide="false" asp-advanced="false">@await Html.PartialAsync("_CreateOrUpdate.CarouselImages", Model)</nop-panel> *@
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
