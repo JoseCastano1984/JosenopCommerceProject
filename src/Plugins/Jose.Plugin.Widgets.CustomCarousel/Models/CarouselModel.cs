@@ -14,8 +14,8 @@ public record CarouselModel : BaseNopEntityModel
     public DateTime StartDate { get; set; }
     [Required(ErrorMessage = "End Date is required")]
     public DateTime EndDate { get; set; }
-    
     public bool Published { get; set; }
-    
-    public IList<CarouselImage> ImagesInCarousel { get; set; }
+    public IList<CarouselImageModel> ImagesInCarousel = new List<CarouselImageModel>();
+
+    public CarouselImageModel AddImageInCarousel { get; set; } =  new ();
 }

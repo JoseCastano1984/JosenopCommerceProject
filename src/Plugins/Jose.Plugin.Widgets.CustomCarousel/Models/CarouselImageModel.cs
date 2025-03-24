@@ -16,7 +16,7 @@ public record CarouselImageModel :  BaseNopEntityModel
     [UIHint("Picture")]
     public int MobileImageId { get; set; }
     
-    public string Link { get; set; }
+    public string? Link { get; set; }
     public int DisplayOrder { get; set; }
     public bool Published { get; set; }
 }

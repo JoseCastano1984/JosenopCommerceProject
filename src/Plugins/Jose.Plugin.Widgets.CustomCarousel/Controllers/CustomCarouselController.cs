@@ -72,7 +72,8 @@ public class CustomCarouselController : BasePluginController
                 EndDate = model.EndDate,
                 Published = model.Published,
                 Deleted = false,
-                CreateDate = DateTime.Now
+                CreateDate = DateTime.Now,
+                UpdatedDate = DateTime.Now
             };
             await _carouselService.InsertCarouselAsync(carousel);
             
@@ -138,4 +139,13 @@ public class CustomCarouselController : BasePluginController
 
         return new NullJsonResult();
     }
+
+    // public async Task<IActionResult> AddImageInCarousel(CarouselImageModel model)
+    // {
+    //     if (!await _permissionService.AuthorizeAsync(StandardPermission.Configuration.MANAGE_WIDGETS))
+    //         return AccessDeniedView();
+    //
+    //     if (model.ImageId == 0)
+    //         throw new ArgumentException();
+    // }
 }
